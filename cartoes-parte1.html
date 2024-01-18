@@ -15,19 +15,19 @@
 
   <body style="margin-bottom: 200px;padding: 16px;">
     
-    <h3 class="border-bottom">Cartão simples</h3>
+    <h3 class="border-bottom bg-dark text-white h3 text-center">Cartão simples</h3>
     <div class="card shadow">
       <div class="card-body">
-        <h4 class="card-title">Título do cartão</h4>
-        <h6 class="card-subtitle">Subtítulo do cartão</h6>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
-        <a class="btn btn-outline-primary float-right" href="">Leia mais</a>
+        <h4 class="card-title">card-title</h4>
+        <h6 class="card-subtitle">card-subtitle</h6>
+        <p class="card-text"><b>card-text</b> ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-primary float-right" href="">btn-outline-primary</a>
       </div>
     </div>
 
     <br><br>
 
-    <h3 class="border-bottom">Cartão com imagem</h3>
+    <h3 class="border-bottom bg-dark text-white h3 text-center">Cartão com imagem</h3>
     <h4>Imagem no top</h4>
     <div class="card shadow">
       <img class="card-img-top" src="img/photo-600x200.jpg">
@@ -52,7 +52,7 @@
 
     <br><br>
 
-    <h3 class="border-bottom">Cartão com imagem sobreposta</h3>
+    <h3 class="border-bottom bg-dark text-white h3 text-center">Cartão com imagem sobreposta</h3>
     <div class="card shadow">
       <img class="card-img" style="width: auto; height: 250px;" src="https://source.unsplash.com/random/600x250">
       <div class="card-img-overlay text-white">
@@ -65,7 +65,7 @@
 
     <br><br>
 
-    <h3 class="border-bottom">Cartão com cabeçalho</h3>
+    <h3 class="border-bottom bg-dark text-white h3 text-center">Cartão com cabeçalho</h3>
     <div class="card shadow">
       <div class="card-header display-4">
         Cabeçalho
@@ -80,7 +80,7 @@
 
     <br><br>
 
-    <h3 class="border-bottom">Cartão com cabeçalho e rodapé / Alinhamento</h3>
+    <h3 class="border-bottom bg-dark text-white h3 text-center">Cartão com cabeçalho e rodapé / Alinhamento</h3>
     <!-- alinhamento utilizando a class text- -->
     <div class="card text-center shadow">
       <div class="card-header">
@@ -99,7 +99,7 @@
 
     <br><br>
 <!-- ///////////////////////////////////////////////////////////////////////////// -->
-    <h3 class="border-bottom">Cartão com navegação</h3>
+    <h3 class="border-bottom bg-dark text-white h3 text-center">Cartão com navegação</h3>
     <div class="card">
       <div class="card-header">
         <ul class="nav nav-tabs card-header-tabs">
@@ -115,16 +115,156 @@
         </ul>
       </div>
       <div class="card-body">
-        <h4>Título do cartão</h4>
+        <h4>Com navegação</h4>
         <h6>Subtítulo do cartão</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
-        <a class="btn btn-outline-secondary btn-block" href="">Leia mais</a>
+        <a class="btn btn-outline-info btn-block" href="">Leia mais</a>
+      </div>
+    </div>
+
+    <br><br>
+<!-- ///////////////////////////////////////////////////////////////////////////// -->
+    <!-- Com cores -->
+    <h3 class="border-bottom bg-dark text-white h3 text-center">Cartão com cores de fundo</h3>
+    <div class="card bg-secondary text-white mb-1">
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Basta adicionar <b>card bg-secondary</b> cores podem ser: primary, secondary, success, info, warning, danger, light, dark, white</p>
+        <a class="btn btn-outline-dark float-right" href="">Leia mais</a>
+      </div>
+    </div>
+    
+    <div class="card bg-primary text-white">
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Basta adicionar <b>card bg-primary</b> cores podem ser: primary, secondary, success, info, warning, danger, light, dark, white</p>
+        <a class="btn btn-outline-light float-right" href="">Leia mais</a>
       </div>
     </div>
 
     <br><br>
 
+<!-- ///////////////////////////////////////////////////////////////////////////// -->
+    <!-- Com Bordas -->
+    <h3 class="border-bottom bg-dark text-white h3 text-center">Cartão com bordas</h3>
+    <div class="card border-primary">
+      <div class="card-header">
+        Cabeçalho
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Basta adicionar <b>card border-primary</b> cores podem ser: primary, secondary, success, info, warning, danger, light, dark, white</p>
+        <a class="btn btn-outline-dark float-right" href="">Leia mais</a>
+      </div>
+    </div>
 
+    <br><br>
+<!-- ///////////////////////////////////////////////////////////////////////////// -->
+    <!-- Com colunas -->
+    <h3 class="border-bottom bg-dark text-white h3 text-center">Cartão com colunas</h3>
+    <div class="card-columns">
+      <!-- inicio cartão -->
+      <div class="card">
+        <img class="card-img" src="https://source.unsplash.com/random/600x200">
+        <div class="card-img-overlay text-white">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="btn btn-outline-light float-right" href="">Leia mais</a>
+        </div>
+      </div>
+      <!-- fim cartão -->
+
+      <div class="card shadow pb-2">
+        <div class="card-body">
+          <h4 class="card-title">Simples</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <div class="text-right">
+            <a class="btn btn-outline-primary" href="">Leia mais</a>
+          </div>
+        </div>
+      </div>
+      <!-- fim cartão -->
+      <div class="card bg-secondary text-white">
+        <div class="card-header">
+          Cor
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Cartão com cor</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Basta adicionar <b>card bg-secondary</b> cores podem ser: primary, secondary, success, info, warning, danger, light, dark, white</p>
+          <div class="text-right">
+            <a class="btn btn-outline-dark" href="">Leia mais</a>
+          </div>
+        </div>
+      </div>
+      <!-- fim cartão -->
+      <div class="card">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="">Link 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Link 2</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h4>Título do cartão</h4>
+          <h6>Subtítulo do cartão</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a class="btn btn-outline-info btn-block" href="">Leia mais</a>
+        </div>
+      </div>
+      <!-- fim cartão -->
+      <div class="card shadow">
+        <div class="card-header text-center">
+          Cabeçalho
+        </div>
+        <div class="card-body text-right">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="text-right">
+            <a class="btn btn-outline-primary" href="">Leia mais</a>
+          </div>
+        </div>
+        <div class="card-footer text-left">
+          Rodapé
+        </div>
+      </div>
+      <!-- fim cartão -->
+      <div class="card shadow">
+        <img class="card-img-top" src="img/photo-600x200.jpg">
+        <div class="card-body">
+          <h4 class="card-title">Cartão com imagem no topo</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <div class="text-right">
+            <a class="btn btn-outline-primary" href="">Leia mais</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- fim cartão -->
+
+      <div class="card border-primary">
+        <div class="card-body">
+          <h4 class="card-title">Com bordas</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Basta adicionar <b>card border-primary</b> cores podem ser: primary, secondary, success, info, warning, danger, light, dark, white</p>
+          <div class="text-right">
+            <a class="btn btn-outline-dark" href="">Leia mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
