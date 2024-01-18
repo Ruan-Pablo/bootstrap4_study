@@ -34,25 +34,37 @@
 
     <br>
     <br>
+     <!-- 
+      Elemento Bloco = ocupa uma linha inteira, n permite que outro elemento ocupe o lado
+      Elemento inline = ocupa apenas seu tamanho, permite que outro elemento ocupe o lado
+    -->
 
     <!-- Elemento Block para inline -->
-    <h1 class="bg-success d-inline">Lorem ipsum dolor</h1>
-    <p class="bg-success d-inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h1>Exemplo Block</h1>
+    <p class="bg-info">elemento block ocupa tudo</p>
+
+    <h1 class="bg-success d-inline">Elemento Block com "d-inline"</h1>
+    <p class="bg-success d-inline">elemento block para inline, utilizando "d-inline"</p>
 
     <br>
     <br>
 
     <!-- Elemento Inline para Block -->
-    <span class="d-block">Lorem ipsum dolor 1</span>
-    <span class="d-block">Lorem ipsum dolor 2</span>
+    <h1>Exemplo Inline</h1>
+
+    <span class="bg-success">Elemento inline ocupa apenas o tamanho do elemento</span>
+    <span class="bg-warning">Elemento inline nn aceita margin nem width</span>
+
+    <span class="bg-success d-block">Elemento inline para block 1</span>
+    <span class="bg-warning d-block">Elemento inline para block 2</span>
 
     <br>
     <br>
 
     <!-- Elemento Inline - Block -->
     <div class="bg-warning">
-      <h3 class="bg-success d-inline-block">Lorem ipsum</h3>
-      <h3 class="bg-success d-inline-block" style="width: 400px; margin-top: 10px;">Lorem ipsum dolor</h3>
+      <h3 class="bg-success d-inline-block">Ocupa apenas o espaço do elemento</h3>
+      <h3 class="bg-success d-inline-block" style="width: 600px; margin-top: 20px;">e permite margin e width</h3>
     </div>
 
 
