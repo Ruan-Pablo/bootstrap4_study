@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Grids</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    .marcador-container {
+      background-color: aquamarine;
+      border: solid 1px;
+    }
+    .marcador {
+      background-color: aqua;
+      border: solid 1px;
+    }
+  </style>
+
+<script>
+  var largura = window.innerWidth;
+  var altura = window.innerHeight;
+
+  function mudou_largura() {
+      largura = window.innerWidth;
+      document.getElementById("largura").innerHTML = largura;
+  }
+
+  function mudou_tamanho() {
+      altura = window.innerHeight;
+      document.getElementById("altura").innerHTML = altura;
+      mudou_largura();
+  }
+  window.addEventListener("resize", mudou_tamanho());
+
+
+</script>
+  </head>
+
+  <body onresize="mudou_tamanho()">
+    <h4 class="bg-secondary text-white p-3 text-center">Redimencione a largura da págia</h4>
+    <div class="container marcador-container">
+      Tamanho da janela(lxa): <span id="largura"></span>x<span id="altura"></span>
+      <div class="row"> 
+        <div class="marcador col-1 p-0">Area</div>
+        <div class="marcador col-1 p-0">Area</div>
+        <div class="marcador col-1 p-0">Area</div>
+        <div class="marcador col-1 p-0">Area</div>
+        <div class="marcador col-1 p-0">Area</div>
+        <div class="marcador col-1 p-0">Area</div>
+        <div class="marcador col-1 p-0">Area</div>
+        <div class="marcador col-1 p-0">Area</div>
+        <div class="marcador col-1 p-0">Area</div>
+        <div class="marcador col-1 p-0">Area</div>
+        <div class="marcador col-1 p-0">Area</div>
+        <div class="marcador col-1 p-0">Area</div>
+      </div>
+      <br>
+      sm - ativo enquato for maior que 576px
+      <div class="row">
+        <div class="marcador col-6 col-sm-2">Area 1</div>  
+        <div class="marcador col-6 col-sm-10">Area 2</div>
+      </div>
+      md - ativo enquato for maior que 768px
+      <div class="row">
+        <div class="marcador col-6 col-md-2">Area 1</div>  
+        <div class="marcador col-6 col-md-10">Area 2</div>
+      </div>
+      lg - ativo enquato for maior que 992px
+      <div class="row">
+        <div class="marcador col-6 col-lg-2">Area 1</div>  
+        <div class="marcador col-6 col-lg-10">Area 2</div>
+      </div>
+      xl - ativo enquato for maior que 1200px
+      <div class="row">
+        <div class="marcador col-6 col-xl-2">Area 1</div>  
+        <div class="marcador col-6 col-xl-10">Area 2</div>
+      </div>
+      <br>
+      <!--  -->
+      <h4 class="offset-1">Largura fixa</h4>
+      <div class="row marcador-container">
+        <div class="marcador col">Area1</div>
+        <div class="marcador col">Area2</div>
+        <div class="marcador col">Area3</div>
+        <div class="marcador col">Area4</div>
+      </div>
+      <!--  -->
+      <h4 class="offset-1">Largura auto-layout</h4>
+      <div class="row marcador-container">
+        <div class="marcador col-2">Area1</div>
+        <div class="marcador col-6">Area2</div>
+        <div class="marcador col">Area3</div>
+      </div>
+      <!--  -->
+      <h4 class="offset-1">Largura empilhado</h4>
+      <div class="row marcador-container">
+        <div class="marcador col-sm">Area1</div>
+        <div class="marcador col-sm">Area2</div>
+        <div class="marcador col-sm">Area3</div>
+      </div>
+      <!--  -->
+      <h4 class="offset-1">Largura Ordenado</h4>
+      <div class="row marcador-container">
+        <div class="marcador col-sm-4 order-3">Area1</div>
+        <div class="marcador col-sm-4 order-1">Area2</div>
+        <div class="marcador col-sm-4 order-2">Area3</div>
+      </div>
+      <!--  -->
+      <h4 class="offset-1">Offset</h4>
+      <div class="row marcador-container">
+        <div class="marcador col-6 offset-3">Login...</div>
+      </div>
+      <!--  -->
+      <h4 class="offset-1">Multiplos Offset</h4>
+      <div class="row marcador-container">
+        <div class="marcador col-sm-4 ">Area1</div>
+        <div class="marcador col-sm-4 offset-4">Area2</div>
+      </div>
+      <div class="row marcador-container">
+        <div class="marcador col-sm-3 offset-2">Area1</div>
+        <div class="marcador col-sm-3 offset-2">Area2</div>
+      </div>
+      <div class="row marcador-container">
+        <div class="marcador col-sm-2 offset-4">Area1</div>
+        <div class="marcador col-sm-2">Area2</div>
+      </div>
+      <!--  -->
+      <h4 class="offset-1">Aninhamento</h4>
+      <div class="row marcador-container">
+        <div class="col-sm-6  bg-warning">
+          row dentro da row
+          <div class="row">
+            <div class="marcador col-sm-6 ">Area1</div>
+            <div class="marcador col-sm-4">Area2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
